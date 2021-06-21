@@ -1,0 +1,13 @@
+  ===== notes ===
+
+  - jumpForce var 1700 unless special case for level
+  - side force 70 / 70
+  - forward force = 7150 pref unless special case for level 
+  - Fog at 1.5 =x=x=x
+
+  - fog  <1 on Thumbs
+
+  - FULL LEVEL 3000m = 50 secs
+
+Background, 171, 171, 171
+"Complete", 225, 47, 47

@@ -1,0 +1,15 @@
+
+		THINGS TO CHANGE
+
+	Main Camera - 
+			Clipping planes - 
+						Near - 0.5
+						Far - 200
+			Depth - 0
+			CRT - Disable
+			Bleeding Colors - Disable
+			Corrupted VRAM - Disable
+			Tint - Disable
+			
+	PPManager - 
+			Chromatic aberation - Disable
