@@ -6,7 +6,7 @@ public class ChangeScene : MonoBehaviour
 {
 
     public Button[] levelButtons;
-
+    public GameObject[] lockIcons;
 
     void Start()
     {
@@ -18,6 +18,9 @@ public class ChangeScene : MonoBehaviour
             if(i + 1 > levelReached)
             {
                 levelButtons[i].interactable = false;
+                lockIcons[i].GetComponent<Image>().enabled = true;
+            } else { 
+                lockIcons[i].GetComponent<Image>().enabled = false;      
             }
         }
     }

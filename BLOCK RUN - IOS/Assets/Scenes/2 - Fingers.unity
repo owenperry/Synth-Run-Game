@@ -1856,6 +1856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons: []
+  lockIcons: []
 --- !u!4 &397885095
 Transform:
   m_ObjectHideFlags: 0
@@ -5954,6 +5955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButtons: []
+  lockIcons: []
 --- !u!1001 &1404687543
 PrefabInstance:
   m_ObjectHideFlags: 0
