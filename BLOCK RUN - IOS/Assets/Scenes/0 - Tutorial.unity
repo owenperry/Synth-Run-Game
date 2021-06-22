@@ -3012,7 +3012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8e1b560177a2045b151699e1a71739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  levelButtons: []
 --- !u!4 &1179376420
 Transform:
   m_ObjectHideFlags: 0
@@ -3673,16 +3673,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498070020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1681958895}
-  m_RootOrder: 4
+  m_Father: {fileID: 1536504167}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.000004, y: 244.99997}
+  m_AnchoredPosition: {x: -8.000004, y: -0.000061035156}
   m_SizeDelta: {x: 484.318, y: 223.50046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498070022
@@ -3913,9 +3913,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1498070021}
   m_Father: {fileID: 1681958895}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4147,6 +4148,8 @@ MonoBehaviour:
   restartDelay: 2
   completeLevelUI: {fileID: 28804583}
   score: {fileID: 2096071102}
+  nextLevel: 1 - TheBeggining
+  levelToUnlock: 2
 --- !u!4 &1570092867
 Transform:
   m_ObjectHideFlags: 0
@@ -4673,7 +4676,6 @@ RectTransform:
   - {fileID: 663011808}
   - {fileID: 609596938}
   - {fileID: 922422218}
-  - {fileID: 1498070021}
   - {fileID: 1536504167}
   - {fileID: 2096071103}
   - {fileID: 1883041957}
@@ -5503,7 +5505,7 @@ RectTransform:
   m_Children:
   - {fileID: 1708642622}
   m_Father: {fileID: 1681958895}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5555,9 +5557,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1179376419}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: btn_change_scene
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5727,7 +5729,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1681958895}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject score;
 
+    public string nextLevel = "Level02";
+    public int levelToUnlock = 2;
+
     public void EndGame()
     {
         if (gameHasEnded == false)
@@ -30,6 +33,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level completed");
         completeLevelUI.SetActive(true);
         score.SetActive(false);
+        PlayerPrefs.SetInt("levelReached", levelToUnlock);
+
     }
 
 }

@@ -2112,6 +2112,8 @@ MonoBehaviour:
   restartDelay: 2
   completeLevelUI: {fileID: 1749949326}
   score: {fileID: 171865334}
+  nextLevel: 4 - Teeth
+  levelToUnlock: 5
 --- !u!4 &269478317
 Transform:
   m_ObjectHideFlags: 0
@@ -9640,7 +9642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8e1b560177a2045b151699e1a71739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  levelButtons: []
 --- !u!4 &1130289962
 Transform:
   m_ObjectHideFlags: 0
@@ -16644,7 +16646,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1130289961}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: btn_change_scene
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
