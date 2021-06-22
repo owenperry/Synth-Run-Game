@@ -1,8 +1,0 @@
-	=== tutorial ===
-
-	timings ===
-	
-	- Player moves firward auto
-	- Press left/right side for movement
-	- Avoid obstacles ...
-	- Reach the end of the level blah blah blah

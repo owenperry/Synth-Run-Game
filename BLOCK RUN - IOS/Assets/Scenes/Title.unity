@@ -637,7 +637,6 @@ GameObject:
   m_Component:
   - component: {fileID: 572914043}
   - component: {fileID: 572914042}
-  - component: {fileID: 572914044}
   m_Layer: 11
   m_Name: Audio Source
   m_TagString: Untagged
@@ -755,18 +754,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &572914044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572914041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b4e974813169614bb947a8fb19db7ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &583062619
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +866,6 @@ GameObject:
   - component: {fileID: 622732525}
   - component: {fileID: 622732524}
   - component: {fileID: 622732523}
-  - component: {fileID: 622732519}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -887,20 +873,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &622732519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622732515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c23356f494faf4703bf771f7ebc5708d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 1
-  shift: 0.25
 --- !u!81 &622732523
 AudioListener:
   m_ObjectHideFlags: 0
@@ -978,7 +950,7 @@ GameObject:
   - component: {fileID: 747164500}
   - component: {fileID: 747164499}
   m_Layer: 5
-  m_Name: Block
+  m_Name: Synth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1550,7 +1522,7 @@ GameObject:
   - component: {fileID: 1713167965}
   - component: {fileID: 1713167967}
   m_Layer: 5
-  m_Name: Block (1)
+  m_Name: Synth (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1588,7 +1560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1665,7 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8e1b560177a2045b151699e1a71739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 572914041}
+  levelButtons: []
 --- !u!4 &1756013046
 Transform:
   m_ObjectHideFlags: 0

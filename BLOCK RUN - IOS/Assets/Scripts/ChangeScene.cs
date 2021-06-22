@@ -20,7 +20,6 @@ public class ChangeScene : MonoBehaviour
                 levelButtons[i].interactable = false;
             }
         }
-
     }
 
     public void btn_change_scene()
