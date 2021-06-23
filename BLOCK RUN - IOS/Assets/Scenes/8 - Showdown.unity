@@ -987,7 +987,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTextTMP: {fileID: 393648308}
-  highScoreTMP: {fileID: 1306494855}
   distance: 1
   scoreCount: 
   percentage: '%'
@@ -4110,6 +4109,9 @@ MonoBehaviour:
   score: {fileID: 393648305}
   nextLevel: Level02
   levelToUnlock: 2
+  object1: {fileID: 1475612494}
+  object2: {fileID: 0}
+  sceneIndex: 0
 --- !u!4 &1961147766
 Transform:
   m_ObjectHideFlags: 0

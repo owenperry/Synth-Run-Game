@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-
     // Ew vars
     public Rigidbody rb;    // Referance to the rigidbody component called "rb"
     public float jumpForce = 500f;
@@ -35,21 +35,15 @@ public class PlayerCollision : MonoBehaviour
         if (collisionInfo.collider.tag == "Obstacle")   // If the player collides with an obstacle
         {
             deathSound.enabled = true;
-
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
-
             musicSound.enabled = false;
-
-            // StartCoroutine(TurnOffMusic());
         }
 
         if (collisionInfo.collider.tag == "Jump")   // If the player collides with a jump pad
         {
             rb.AddForce(0, jumpForce * Time.deltaTime, pushForce, ForceMode.VelocityChange);
-
             jumpSound.enabled = true;
-
             Invoke("TurnOffJump", 1);
         }
 
@@ -60,9 +54,7 @@ public class PlayerCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Jump"))   // If the player collides with a jump pad
         {
             rb.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
-
             jumpSound.enabled = true;
-
             Invoke("TurnOffJump", 1);
         }
     }

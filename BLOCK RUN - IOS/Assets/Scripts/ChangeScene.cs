@@ -10,7 +10,7 @@ public class ChangeScene : MonoBehaviour
 
     void Start()
     {
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        int levelReached = PlayerPrefs.GetInt("levelReached", 2);
 
         for(int i = 0; i < levelButtons.Length; i++)
         {
@@ -27,6 +27,7 @@ public class ChangeScene : MonoBehaviour
     public void btn_change_scene()
     {
         SceneManager.LoadScene(1);
+        FindObjectOfType<GameManager>().SetHighScore();
     }
 
     public void titleScene()
