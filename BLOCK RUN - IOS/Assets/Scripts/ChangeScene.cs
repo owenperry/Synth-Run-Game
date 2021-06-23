@@ -21,6 +21,7 @@ public class ChangeScene : MonoBehaviour
             } else { 
                 lockIcons[i].GetComponent<Image>().enabled = false;      
             }
+
         }
     }
 

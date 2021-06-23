@@ -3037,7 +3037,6 @@ MonoBehaviour:
   distance: 1
   scoreCount: 
   percentage: '%'
-  sceneIndex: 0
   object1: {fileID: 1796412478}
   object2: {fileID: 1059046060}
 --- !u!114 &701992686

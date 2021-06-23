@@ -45,7 +45,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level completed");
         completeLevelUI.SetActive(true);
         score.SetActive(false);
-        PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
+        {
+             PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        }
+
     }
 
     public void SetHighScore()
