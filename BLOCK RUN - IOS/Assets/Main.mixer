@@ -45,16 +45,10 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 201f3fe3d59d2cd48b6e7cca9ff172e5
-    name: MyExposedParam
-  - guid: f80be76429c51fe468cfa349d28d27dd
-    name: MyExposedParam 2
-  - guid: f9a25b633623424488bed0dd5721f512
-    name: MyExposedParam 1
+    name: volume
   m_AudioMixerGroupViews:
   - guids:
     - eae64f28ac6cc954995341f813ab0095
-    - 1281d3cfc5171944ab8c602b03264339
-    - 49415d3e7600ce645a031ba7ffe5ae38
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -67,9 +61,7 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: eae64f28ac6cc954995341f813ab0095
-  m_Children:
-  - {fileID: 1202130853949447143}
-  - {fileID: 2556944740655799523}
+  m_Children: []
   m_Volume: 201f3fe3d59d2cd48b6e7cca9ff172e5
   m_Pitch: 2b3ccbf743638b94db924469a3bd7f86
   m_Send: 00000000000000000000000000000000
